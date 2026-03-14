@@ -4,14 +4,15 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = withBundleAnalyzer({
-  output: process.env.BUILD_STANDALONE === "true" ? "standalone" : undefined,
+  output: "export",
   reactStrictMode: true,
   pageExtensions: ["ts", "tsx", "js"],
   eslint: {
     dirs: ["src"],
   },
   images: {
-    domains: ["https://flagcdn.com"],
+    unoptimized: true,
+    domains: ["flagcdn.com"],
   },
   webpack: (config) => {
     config.module.rules.push({
