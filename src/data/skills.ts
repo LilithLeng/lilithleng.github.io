@@ -1,177 +1,75 @@
-import {
-  SiExpress,
-  SiSocketdotio,
-  SiPrisma,
-  SiNextdotjs,
-  SiFlask,
-} from "react-icons/si";
-import {
-  FramerMotionIcon,
-  ReactRouterDomIcon,
-  VitePwaIcon,
-} from "@/components/icons";
 import { type SkillsShowcaseProps } from "@/components/skills/skills-showcase";
 
 // Languages
-import HtmlSvg from "@/public/icons/html.svg";
-import CsssSvg from "@/public/icons/css.svg";
-import SassSvg from "@/public/icons/sass.svg";
-import JavascriptSvg from "@/public/icons/javascript.svg";
-import TypescriptSvg from "@/public/icons/typescript.svg";
 import PythonSvg from "@/public/icons/python.svg";
+import SQLSvg from "@/public/icons/sql.svg";
 
-// Libraries
-import ReactjsSvg from "@/public/icons/reactjs.svg";
-import SolidjsSvg from "@/public/icons/solidjs.svg";
-import ReduxSvg from "@/public/icons/redux.svg";
-import TailwindcssSvg from "@/public/icons/tailwindcss.svg";
-import MuiSvg from "@/public/icons/mui.svg";
-import ViteSvg from "@/public/icons/vite.svg";
+// Data Visualization
+import PowerBISvg from "@/public/icons/powerbi.svg";
+import TableauSvg from "@/public/icons/tableau.svg";
+import ExcelSvg from "@/public/icons/excel.svg";
 
-// Backend
-import NodejsSvg from "@/public/icons/nodejs.svg";
+// Databases & Data Platforms
+import PostgreSQLSvg from "@/public/icons/postgresql.svg";
+import MySQLSvg from "@/public/icons/mysql.svg";
 
-// Database and ORMS
-import MongoDBSvg from "@/public/icons/mongodb.svg";
-import PostgressSvg from "@/public/icons/postgresql.svg";
+// Machine Learning
+import TensorflowSvg from "@/public/icons/tensorflow.svg";
 
-// Tools and Tech
+// Tools & Platforms
 import GitSvg from "@/public/icons/git.svg";
-import DockerSvg from "@/public/icons/docker.svg";
 import AwsSvg from "@/public/icons/aws.svg";
-import PostmanSvg from "@/public/icons/postman.svg";
+import GoogleAnalystSvg from "@/public/icons/googleanalyst.svg";
+import SASSvg from "@/public/icons/sas.svg";
+import SAPSvg from "@/public/icons/sap.svg";
+import SnowflakeSvg from "@/public/icons/snowflake.svg";
+import DatabricksSvg from "@/public/icons/databricks.svg";
 
 export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
   {
     sectionName: "Languages",
     skills: [
       {
-        name: "HTML",
-        icon: HtmlSvg,
-      },
-      {
-        name: "CSS",
-        icon: CsssSvg,
-      },
-      {
-        name: "SASS",
-        icon: SassSvg,
-      },
-      {
-        name: "Javascript",
-        icon: JavascriptSvg,
-      },
-      {
-        name: "Typescript",
-        icon: TypescriptSvg,
-      },
-      {
         name: "Python",
         icon: PythonSvg,
       },
+      { name: "SQL", icon: SQLSvg },
     ],
   },
   {
-    sectionName: "Libraries and Frameworks",
+    sectionName: "Data Visualization",
     skills: [
       {
-        name: "Reactjs",
-        icon: ReactjsSvg,
+        name: "Power BI",
+        icon: PowerBISvg,
       },
-      {
-        name: "Nextjs",
-        icon: SiNextdotjs,
-      },
-      {
-        name: "Solidjs",
-        icon: SolidjsSvg,
-      },
-      {
-        name: "React Router Dom",
-        icon: ReactRouterDomIcon,
-      },
-      {
-        name: "Redux",
-        icon: ReduxSvg,
-      },
-      {
-        name: "Tailwindcss",
-        icon: TailwindcssSvg,
-      },
-      {
-        name: "MUI",
-        icon: MuiSvg,
-      },
-      {
-        name: "Framer motion",
-        icon: FramerMotionIcon,
-      },
-      {
-        name: "Vite",
-        icon: ViteSvg,
-      },
-      {
-        name: "Vite PWA",
-        icon: VitePwaIcon,
-      },
+      { name: "Tableau", icon: TableauSvg },
+      { name: "Excel", icon: ExcelSvg },
     ],
   },
   {
-    sectionName: "Backend",
+    sectionName: "Databases & Data Platforms",
     skills: [
-      {
-        name: "Nodejs",
-        icon: NodejsSvg,
-      },
-      {
-        name: "Express",
-        icon: SiExpress,
-      },
-      {
-        name: "Socket.io",
-        icon: SiSocketdotio,
-      },
-      {
-        name: "Flask",
-        icon: SiFlask,
-      },
+      { name: "PostgreSQL", icon: PostgreSQLSvg },
+      { name: "MySQL", icon: MySQLSvg },
+      { name: "Snowflake", icon: SnowflakeSvg },
+      { name: "Databricks", icon: DatabricksSvg },
     ],
   },
   {
-    sectionName: "Databases and ORMs",
+    sectionName: "Tools & Platforms",
     skills: [
-      {
-        name: "MongoDB",
-        icon: MongoDBSvg,
-      },
-      {
-        name: "Postgress",
-        icon: PostgressSvg,
-      },
-      {
-        name: "Prisma",
-        icon: SiPrisma,
-      },
-    ],
-  },
-  {
-    sectionName: "Tools and Technologies",
-    skills: [
-      {
-        name: "Git",
-        icon: GitSvg,
-      },
-      {
-        name: "Docker",
-        icon: DockerSvg,
-      },
       {
         name: "AWS",
         icon: AwsSvg,
       },
+      { name: "Google Analytics", icon: GoogleAnalystSvg },
+      { name: "SAS", icon: SASSvg },
+      { name: "SAP", icon: SAPSvg },
+      { name: "Tensorflow", icon: TensorflowSvg },
       {
-        name: "Postman",
-        icon: PostmanSvg,
+        name: "Git",
+        icon: GitSvg,
       },
     ],
   },
