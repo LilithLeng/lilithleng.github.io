@@ -50,32 +50,35 @@ export default function LandingHero() {
                   Data Analyst
                 </span>
               </FadeUp>
-
               <FadeUp key="description" duration={0.6} delay={0.2}>
                 <div className="mt-8 max-w-3xl text-base font-semibold text-zinc-900 dark:text-zinc-200 sm:text-base md:text-xl">
-                  I am a software developer specializing in building
-                  high-performance, user-focused web applications. Skilled in{" "}
-                  <span className="font-semibold text-accent">ReactJS</span>,{" "}
-                  <span className="font-semibold text-accent">NextJS</span>,{" "}
-                  <span className="font-semibold text-accent">SolidJS</span>,
-                  and an expert in{" "}
-                  <span className="font-semibold text-accent">JavaScript</span>,{" "}
-                  <span className="font-semibold text-accent">HTML</span> and{" "}
-                  <span className="font-semibold text-accent">CSS</span>
+                  Making data mean more. <br />
+                  From messy data to clear insights. Using{" "}
+                  <span className="font-semibold text-accent">
+                    Python
+                  </span>,{" "}
+                  <span className="font-semibold text-accent">SQL</span>, and{" "}
+                  <span className="font-semibold text-accent">Power BI</span>, I
+                  explore datasets, uncover patterns, and turn analysis into
+                  decisions.
                 </div>
               </FadeUp>
             </AnimatePresence>
           </div>
         </div>
         <div className="mt-8 flex w-full justify-center md:mt-0 md:w-1/3 md:justify-center">
-          <Image
-            src={profileImg}
-            width={300}
-            height={300}
-            className="h-auto w-1/2 px-0 md:w-3/4"
-            alt="profile image"
-            unoptimized
-          />
+          <FadeUp key="home-image" duration={0.6}>
+            <div className="aspect-square w-1/2 overflow-hidden rounded-full md:w-3/4">
+              <Image
+                src={profileImg}
+                width={300}
+                height={300}
+                className="h-full w-full object-cover"
+                alt="profile image"
+                unoptimized
+              />
+            </div>
+          </FadeUp>
         </div>
       </div>
     </motion.section>

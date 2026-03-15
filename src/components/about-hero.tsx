@@ -6,16 +6,16 @@ import { AnimatePresence } from "framer-motion";
 import FadeUp from "@/animation/fade-up";
 import FadeRight from "@/animation/fade-right";
 
-import profileImg from "@/public/images/profile.png";
+import proProfileImg from "@/public/images/pro-profile.jpg";
 
 export default function AboutHero() {
   return (
-    <div className="mx-auto mt-0 flex max-w-7xl flex-col items-center gap-6 px-6 pt-20 text-center sm:px-14 md:mt-20 md:px-20 lg:mt-0 lg:flex-row lg:text-left">
-      <div className="w-full sm:w-1/2 md:w-2/3 lg:inline-block lg:h-full lg:w-1/2">
+    <div className="mx-auto mt-0 flex max-w-7xl flex-col items-center gap-6 px-6 pt-4 text-center sm:px-14 md:mt-20 md:px-20 lg:mt-0 lg:flex-row lg:text-left">
+      <div className="w-full sm:w-1/2 md:w-1/2 lg:inline-block lg:h-full lg:w-1/2">
         <AnimatePresence>
           <FadeUp key="hero-image" duration={0.6}>
             <Image
-              src={profileImg}
+              src={proProfileImg}
               width={100}
               height={100}
               className="h-auto w-full px-0 xl:px-16"
@@ -34,19 +34,20 @@ export default function AboutHero() {
           </FadeUp>
           <FadeUp key="description-1" duration={0.6} delay={0.2}>
             <p className="mt-8 text-base font-medium text-zinc-900 dark:text-zinc-300 sm:text-lg md:text-lg">
-              I turn vision into reality with code. Whether I&apos;m working on
-              a website or any digital product, I bring my commitment to design
-              excellence and user-centered thinking to every project I work on.
+              I enjoy exploring messy datasets and turning them into clear
+              insights that help people make better decisions. <br />
+              <br />
+              My work mainly involves SQL, Python, and Power BI, with experience
+              across customer analytics, A-B testing, dashboards, and machine
+              learning.
             </p>
           </FadeUp>
           <FadeUp key="description-2" duration={0.6} delay={0.4}>
             <p className="mt-8 text-base font-medium text-zinc-900 dark:text-zinc-300 sm:text-lg md:text-lg">
               Explore my latest{" "}
               <Link href="/projects" className="underline underline-offset-4">
-                <span className="text-accent">projects</span>
-              </Link>{" "}
-              showcasing my expertise in Reactjs, Nextjs, Javascript, Typescript
-              and web development.
+                <span className="text-accent">projects</span>.
+              </Link>
             </p>
           </FadeUp>
           <FadeRight
