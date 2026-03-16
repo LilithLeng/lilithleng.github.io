@@ -52,11 +52,11 @@ export default function Projects() {
           </div>
           <div className="mx-auto mt-16 max-w-5xl text-center text-foreground md:mt-28">
             <span className="text-xl font-bold md:text-2xl">
-              I am currently building new projects and learning backend
-              development to expand my skill set beyond frontend.
+              I am currently building data projects and exploring how data can
+              be turned into meaningful insights.
             </span>
             <p className="mt-10 text-base md:text-xl">
-              Visit my github to see some of the latest projects{" "}
+              Visit my github to explore some of the latest projects{" "}
               <a
                 href={`${siteMetadata.github}?tab=repositories`}
                 target="_blank"
