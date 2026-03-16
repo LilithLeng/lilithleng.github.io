@@ -2,36 +2,25 @@ import { type ExperienceShowcaseListItemProps } from "@/components/experience/ex
 
 export const EDUCATION: ExperienceShowcaseListItemProps[] = [
   {
-    title: "Bachelor Of Engineering in Electronics and Telecommunication",
+    title: "Master of Analytics",
     organisation: {
-      name: "Rizvi College Of Engineering",
-      href: "https://eng.rizvi.edu.in/",
+      name: "Massey University",
+      href: "https://www.massey.ac.nz/",
     },
-    date: "2019-2023",
-    location: "Bandra, Mumbai",
+    date: "Feb 2024 - Feb 2025",
+    location: "Auckland, New Zealand",
     description:
-      "Relevant courses included Data Structures and Algorithms, Web Design, Cloud Computing, Artificial Neural Network and Database Management.",
+      "Developed strong data analysis foundations through projects involving SQL, Python, machine learning, and data visualization.",
   },
   {
-    title: "Higher Secondary School",
+    title: "Bachelor of Engineering",
     organisation: {
-      name: "Mithibai College",
-      href: "https://www.mithibai.ac.in/",
+      name: "University of Jinan",
+      href: "https://www.ujn.edu.cn/",
     },
-    date: "2016-2018",
-    location: "Vile Parle, Mumbai",
+    date: "Sep 2018 - Jun 2022",
+    location: "Jinan, China",
     description:
-      "Completed the course in Electronics Bifocal Science with 68%. Started freelancing making 3D assets for games. Got interested in game development and learned unity and c#",
-  },
-  {
-    title: "Secondary School Education",
-    organisation: {
-      name: "Holy Family High School",
-      href: "https://holyfamilyandheri.org/",
-    },
-    date: "2017-2018",
-    location: "Andheri, Mumbai",
-    description:
-      "Learned good values,dedication and disciplne. Played district football for 5 years.",
+      "Developed quantitative and analytical skills through coursework in construction economics, cost estimation, and project data analysis.",
   },
 ];

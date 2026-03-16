@@ -2,35 +2,35 @@ import { type ExperienceShowcaseListItemProps } from "@/components/experience/ex
 
 export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
   {
-    title: "Software Developer",
+    title: "Accounts Payable Analyst",
     organisation: {
-      name: "Skima",
-      href: "https://skima.ai/",
+      name: "Pan Pacific Travel",
+      href: "https://www.panpacific.co.nz/",
     },
-    date: "Oct 2023 - Present",
-    location: "Mumbai",
-    description: "Reactjs and Nextjs app development",
+    date: "Oct 2025 - Present",
+    location: "Auckland, New Zealand",
+    description:
+      "Analyzed and processed high-volume financial datasets across NZ and AU branches using ERP systems, improving data integrity and invoice workflow efficiency.",
   },
   {
-    title: "Engineering Trainee",
+    title: "Insight Analyst",
     organisation: {
-      name: "Hexaware",
-      href: "https://hexaware.com/",
+      name: "ZHYE",
     },
-    date: "July 2023 - Sep 2023",
-    location: "Remote",
+    date: "Jun 2025 - Sep 2025",
+    location: "Auckland, New Zealand",
     description:
-      "Learned to work we monorepo and got to learn application architecture, scalling and build tooling to improve CI/CD of micro services.",
+      "Analyzed housing market data with Python (Pandas), built predictive models, and created Power BI dashboards to uncover price trends and support real estate insights.",
   },
   {
-    title: "Frontend Developer Intern",
+    title: "Data Analyst Intern",
     organisation: {
-      name: "Master Infotech",
-      href: "https://masterinfotech.com/",
+      name: "Freemasons",
+      href: "https://freemasonsnz.org/",
     },
-    date: "Winter - 2022",
-    location: "Remote",
+    date: "Oct 2024 - Feb 2025",
+    location: "Auckland, New Zealand",
     description:
-      "Worked on a team responsible for developing new features and updating old codebases to latest technologies. Learned alot about web development and CI/CD development cycle.",
+      "Analyzed membership churn using SQL and Python (regression and K-means clustering) on a 120+ table database to identify engagement drivers and inform retention strategies.",
   },
 ];
