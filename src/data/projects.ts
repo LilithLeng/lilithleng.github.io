@@ -55,4 +55,28 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     sourceCodeHref:
       "https://github.com/LilithLeng/customer-cohort-analysis-retail",
   },
+  {
+    name: "A/B Testing Analysis for Player Retention (Cookie Cats)",
+    favicon: "/images/projects/logos/cookiecat.ico",
+    imageUrl: ["/images/projects/cookiecat.webp"],
+    description:
+      "Analyzed an A/B test to evaluate how game design changes impact player retention and engagement.",
+    sourceCodeHref: "https://github.com/LilithLeng/player-retention-ab-test",
+  },
+  {
+    name: "Loan Eligibility Prediction (Machine Learning)",
+    favicon: "/images/projects/logos/loan.ico",
+    imageUrl: ["/images/projects/loanEligibility.webp"],
+    description:
+      "Built a machine learning model to predict loan eligibility using applicant financial and demographic data.",
+    sourceCodeHref: "https://github.com/LilithLeng/loan-eligibility-ml",
+  },
+  {
+    name: "Retail Sales Analytics Dashboard",
+    favicon: "/images/projects/logos/tableau.ico",
+    imageUrl: ["/images/projects/tableauData.webp"],
+    description:
+      "Created an interactive Tableau dashboard to visualize retail sales data and deliver insights on performance, customer segments, and geographic distribution.",
+    sourceCodeHref: "https://github.com/LilithLeng/sql-tableau-sales-dashboard",
+  },
 ];

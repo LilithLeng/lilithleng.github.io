@@ -77,29 +77,33 @@ export default function Corosel({ aspectRatio = 1, images }: CoroselProps) {
         ></motion.img>
       </AnimatePresence>
       <div className="absolute bottom-0 flex h-12 w-full items-center justify-center gap-2">
-        <button
-          onClick={() => paginate(1)}
-          className="hidden h-4 w-4 lg:inline-block"
-        >
-          <BiSolidLeftArrow className="fill-zinc-700 dark:fill-zinc-400" />
-        </button>
-        {images.map((_, index) => (
-          <span
-            key={index}
-            className={classNames(
-              "h-2 w-2 rounded-full",
-              index === imageIndex
-                ? "bg-accent"
-                : "bg-zinc-700 dark:bg-zinc-400",
-            )}
-          ></span>
-        ))}
-        <button
-          onClick={() => paginate(-1)}
-          className="hidden h-4 w-4 lg:inline-block"
-        >
-          <BiSolidLeftArrow className="rotate-180 fill-zinc-700 dark:fill-zinc-400" />
-        </button>
+        {images.length > 1 ? (
+          <>
+            <button
+              onClick={() => paginate(1)}
+              className="hidden h-4 w-4 lg:inline-block"
+            >
+              <BiSolidLeftArrow className="fill-zinc-700 dark:fill-zinc-400" />
+            </button>
+            {images.map((_, index) => (
+              <span
+                key={index}
+                className={classNames(
+                  "h-2 w-2 rounded-full",
+                  index === imageIndex
+                    ? "bg-accent"
+                    : "bg-zinc-700 dark:bg-zinc-400",
+                )}
+              />
+            ))}
+            <button
+              onClick={() => paginate(-1)}
+              className="hidden h-4 w-4 lg:inline-block"
+            >
+              <BiSolidLeftArrow className="rotate-180 fill-zinc-700 dark:fill-zinc-400" />
+            </button>
+          </>
+        ) : null}
       </div>
     </div>
   );
