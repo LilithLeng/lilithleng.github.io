@@ -16,7 +16,6 @@ export const EDUCATION: ExperienceShowcaseListItemProps[] = [
     title: "Bachelor of Engineering",
     organisation: {
       name: "University of Jinan",
-      href: "https://www.ujn.edu.cn/",
     },
     date: "Sep 2018 - Jun 2022",
     location: "Jinan, China",

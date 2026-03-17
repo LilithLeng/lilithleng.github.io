@@ -74,7 +74,9 @@ export default function ExperienceShowcaseListItem(
             >
               @{props.organisation.name}
             </Link>
-          ) : null}
+          ) : (
+            `@${props.organisation.name}`
+          )}
         </h3>
         <span className="text-sm font-medium text-foreground xs:text-base">
           {props.date} | {props.location}
