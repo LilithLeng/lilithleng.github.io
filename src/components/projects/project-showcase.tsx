@@ -1,17 +1,17 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 
-import { AnimatePresence, motion } from "framer-motion";
+// import { AnimatePresence, motion } from "framer-motion";
 
 import { ArrowTopRight } from "@/components/icons";
 import ProjectShowcaseList, {
   type ProjectShowcaseListItem,
 } from "@/components/projects/project-showcase-list";
 
-const generateImageData = (proj: ProjectShowcaseListItem[]) => {
-  return proj.map((p) => p.image);
-};
+// const generateImageData = (proj: ProjectShowcaseListItem[]) => {
+//   return proj.map((p) => p.image);
+// };
 
 interface ProjectShowcaseProps {
   projects: ProjectShowcaseListItem[];
@@ -20,9 +20,9 @@ interface ProjectShowcaseProps {
 export default function ProjectShowcase(props: ProjectShowcaseProps) {
   const [currentImage, setCurrentImage] = useState<number>(0);
 
-  const images = useMemo(() => {
-    return generateImageData(props.projects);
-  }, [props.projects]);
+  // const images = useMemo(() => {
+  //   return generateImageData(props.projects);
+  // }, [props.projects]);
 
   const handleAnimate = (index: number) => {
     if (index === currentImage) return;
@@ -32,7 +32,7 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
   return (
     <section className="overflow-hidden px-6 py-32 sm:px-14 md:px-20">
       <div className="relative mx-auto max-w-7xl">
-        <div className="relative right-0 top-0 hidden lg:block">
+        {/* <div className="relative right-0 top-0 hidden lg:block">
           <AnimatePresence>
             <motion.div
               key={props.projects[currentImage].title}
@@ -71,7 +71,7 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
               )}
             </motion.div>
           </AnimatePresence>
-        </div>
+        </div> */}
         <h2 className="text-xl font-semibold text-accent sm:text-3xl">
           My projects
         </h2>

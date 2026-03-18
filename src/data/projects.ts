@@ -4,40 +4,22 @@ import { type ProjectShowcaseListItem } from "@/components/projects/project-show
 export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   {
     index: 0,
-    title: "Json Tree",
+    title: "Customer Retention Analysis (Cohort & RFM)",
     href: "/projects",
-    tags: ["Nextjs", "Tailwindcss", "Monaco Editor", "Vercel"],
+    tags: ["Python", "EDA", "Cohort Analysis", "RFM Segmentation"],
     image: {
-      LIGHT: "/images/projects/jsontreeLight.webp",
-      DARK: "/images/projects/jsontreeDark.webp",
+      LIGHT: "/images/projects/bikeAnalysis.webp",
+      DARK: "/images/projects/bikeAnalysis.webp",
     },
   },
   {
     index: 1,
-    title: "Many Games",
+    title: "A/B Testing Analysis for Player Retention (Cookie Cats)",
     href: "/projects",
-    tags: [
-      "Reactjs",
-      "Tailwindcss",
-      "Scss",
-      "Vite",
-      "React-router-dom",
-      "Redux",
-      "Vercel",
-    ],
+    tags: ["Python", "AB Testing", "Hypothesis Testing"],
     image: {
-      LIGHT: "/images/projects/manyGamesLight.webp",
-      DARK: "/images/projects/manyGamesDark.webp",
-    },
-  },
-  {
-    index: 2,
-    title: "Kanban",
-    href: "/projects",
-    tags: ["Reactjs", "Vite", "Tailwindcss", "Vercel", "Zustand", "React DND"],
-    image: {
-      LIGHT: "/images/projects/kanbanLight.webp",
-      DARK: "/images/projects/kanbanDark.webp",
+      LIGHT: "/images/projects/cookiecat.webp",
+      DARK: "/images/projects/cookiecat.webp",
     },
   },
 ];
@@ -46,10 +28,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
   {
     name: "Customer Retention Analysis (Cohort & RFM)",
     favicon: "/images/projects/logos/rfm.ico",
-    imageUrl: [
-      "/images/projects/bikeAnalysis.webp",
-      "/images/projects/rfmAnalysis.webp",
-    ],
+    imageUrl: ["/images/projects/bikeAnalysis.webp"],
     description:
       "Visualize JSON data format in form of a tree or graph. Application is made using Nextjs, Tailwindcss and Monaco Editor. Design image can be downloaded from this app.",
     sourceCodeHref:
@@ -78,5 +57,48 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     description:
       "Created an interactive Tableau dashboard to visualize retail sales data and deliver insights on performance, customer segments, and geographic distribution.",
     sourceCodeHref: "https://github.com/LilithLeng/sql-tableau-sales-dashboard",
+  },
+  {
+    name: "Kraken Koffee Infographic Project",
+    favicon: "/images/projects/logos/powerbi.ico",
+    imageUrl: ["/images/projects/cafe.jpg"],
+    description:
+      "Built an interactive Power BI dashboard to analyze sales performance, customer behavior, and product trends, delivering data-driven insights and forecasts.",
+    sourceCodeHref:
+      "https://github.com/LilithLeng/kraken-koffee-powerbi-dashboard",
+    liveWebsiteHref:
+      "https://app.powerbi.com/view?r=eyJrIjoiY2Q2YTE2ZmQtMzdiZS00ZWYzLWFjYTctNTFhNDc0MDJhZGEyIiwidCI6IjFiZDVmZGRjLTk5YjUtNDlmZS04M2U2LTVlNTg2ZTIwZjc0OSIsImMiOjJ9",
+  },
+  {
+    name: "MUELLER Brand Competitive Analysis (Pasta Category)",
+    favicon: "/images/projects/logos/pasta.ico",
+    imageUrl: ["/images/projects/mueller.jpg"],
+    description:
+      "Analyzed brand performance using SQL and Python, applying the Dirichlet model to evaluate market share, customer behavior, and competitive positioning.",
+    sourceCodeHref: "https://github.com/LilithLeng/mueller-pasta-analysis",
+  },
+  {
+    name: "Advertising Effectiveness & Budget Optimization (AdStock Model)",
+    favicon: "/images/projects/logos/warehouse.ico",
+    imageUrl: ["/images/projects/warehouseAd.jpg"],
+    description:
+      "Analyzed the impact of advertising spend on sales using the AdStock model to evaluate channel effectiveness and optimize marketing budget allocation.",
+    sourceCodeHref: "https://github.com/LilithLeng/warehouse_ad_analysis",
+  },
+  {
+    name: "Psychological Distress & Net Worth Analysis (OLS Regression)",
+    favicon: "/images/projects/logos/sas.ico",
+    imageUrl: ["/images/projects/distress.jpg"],
+    description:
+      "Applied OLS regression to analyze the impact of psychological distress on net worth, uncovering relationships between mental health, income, and wealth outcomes.",
+    sourceCodeHref: "https://github.com/LilithLeng/applied_economic",
+  },
+  {
+    name: "Labour Market & Education Impact Analysis (New Zealand)",
+    favicon: "/images/projects/logos/python.ico",
+    imageUrl: ["/images/projects/education.jpeg"],
+    description:
+      "Analyzed labour market and education data in New Zealand to uncover how unemployment, income, and higher education participation interact.",
+    sourceCodeHref: "https://github.com/LilithLeng/prosperity_analysis",
   },
 ];
