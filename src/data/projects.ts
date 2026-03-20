@@ -4,7 +4,7 @@ import { type ProjectShowcaseListItem } from "@/components/projects/project-show
 export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   {
     index: 0,
-    title: "Customer Retention Analysis (Cohort & RFM)",
+    title: "Customer Retention",
     href: "/projects",
     tags: ["Python", "EDA", "Cohort Analysis", "RFM Segmentation"],
     image: {
@@ -14,12 +14,22 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   },
   {
     index: 1,
-    title: "A/B Testing Analysis for Player Retention (Cookie Cats)",
+    title: "A/B Testing",
     href: "/projects",
-    tags: ["Python", "AB Testing", "Hypothesis Testing"],
+    tags: ["Python", "A/B Testing", "Hypothesis Testing"],
     image: {
       LIGHT: "/images/projects/cookiecat.webp",
       DARK: "/images/projects/cookiecat.webp",
+    },
+  },
+  {
+    index: 2,
+    title: "Membership Decline",
+    href: "/projects",
+    tags: ["SQL", "Python", "Demographic Analysis", "Regression Analysis"],
+    image: {
+      LIGHT: "/images/projects/freemason.webp",
+      DARK: "/images/projects/freemason.webp",
     },
   },
 ];
@@ -41,6 +51,15 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     description:
       "Analyzed an A/B test to evaluate how game design changes impact player retention and engagement.",
     sourceCodeHref: "https://github.com/LilithLeng/player-retention-ab-test",
+  },
+  {
+    name: "Membership Analysis for Recruitment and Retention (Freemasons NZ)",
+    favicon: "/images/projects/logos/freemason.ico",
+    imageUrl: ["/images/projects/freemason.webp"],
+    description:
+      "Explored membership decline drivers using internal SQL data and census data to support recruitment and retention strategy.",
+    sourceCodeHref:
+      "https://github.com/LilithLeng/freemason-membership-analysis",
   },
   {
     name: "Loan Eligibility Prediction (Machine Learning)",
