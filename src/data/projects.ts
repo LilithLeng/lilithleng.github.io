@@ -40,7 +40,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     favicon: "/images/projects/logos/rfm.ico",
     imageUrl: ["/images/projects/bikeAnalysis.webp"],
     description:
-      "Visualize JSON data format in form of a tree or graph. Application is made using Nextjs, Tailwindcss and Monaco Editor. Design image can be downloaded from this app.",
+      "Analyzed transaction data to uncover customer retention patterns, repeat purchase behavior, and high-value customer segments.",
     sourceCodeHref:
       "https://github.com/LilithLeng/customer-cohort-analysis-retail",
   },
@@ -76,6 +76,8 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     description:
       "Created an interactive Tableau dashboard to visualize retail sales data and deliver insights on performance, customer segments, and geographic distribution.",
     sourceCodeHref: "https://github.com/LilithLeng/sql-tableau-sales-dashboard",
+    liveWebsiteHref:
+      "https://public.tableau.com/views/Test_17478701115320/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
   },
   {
     name: "Kraken Koffee Infographic Project",
